@@ -448,3 +448,23 @@ body {
 .title a:hover {
     color: #007BFF; /* Warna teks saat hover */
 }
+/* Style untuk kotak input form */
+.forms input[type="text"], 
+.forms textarea {
+    border: 1px solid #ddd; /* Garis batas kotak */
+    border-radius: 8px; /* Sudut melengkung */
+    padding: 10px; /* Ruang dalam */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    width: 100%; /* Lebar penuh */
+    background-color: #f5f5dc; /* Latar belakang cream */
+    color: #333; /* Warna teks */
+    transition: 0.3s; /* Efek transisi */
+}
+
+/* Gaya ketika input fokus */
+.forms input[type="text"]:focus,
+.forms textarea:focus {
+    border-color: #007BFF; /* Warna batas saat fokus */
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3); /* Bayangan lebih cerah */
+    outline: none; /* Hilangkan outline default */
+}
