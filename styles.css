@@ -448,23 +448,63 @@ body {
 .title a:hover {
     color: #007BFF; /* Warna teks saat hover */
 }
-/* Style untuk kotak input form */
-.forms input[type="text"], 
+/* Gaya untuk membungkus seluruh form */
+.form-container {
+    border: 1px solid #ddd; /* Batas luar kotak */
+    border-radius: 10px; /* Sudut melengkung */
+    padding: 20px; /* Jarak antara isi dan batas */
+    background-color: #f5f5dc; /* Warna background cream */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan agar terlihat mengambang */
+    max-width: 500px; /* Lebar maksimal untuk kotak */
+    margin: 0 auto; /* Posisi di tengah */
+}
+/* Gaya untuk membungkus seluruh form dan memastikannya melebar */
+.form-container {
+    border: 1px solid #ddd; /* Batas luar kotak */
+    border-radius: 10px; /* Sudut melengkung */
+    padding: 20px; /* Jarak antara isi dan batas */
+    background-color: #f5f5dc; /* Warna background cream */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan agar terlihat mengambang */
+    width: 100%; /* Lebar penuh pada layar */
+    max-width: 100%; /* Mengatur agar melebar penuh ke samping */
+    margin: 20px 0; /* Jarak vertikal dari elemen di atas dan bawah */
+}
+/* Mengatur input dan textarea agar melebar sesuai form */
+.forms input[type="text"],
 .forms textarea {
-    border: 1px solid #ddd; /* Garis batas kotak */
-    border-radius: 8px; /* Sudut melengkung */
-    padding: 10px; /* Ruang dalam */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
-    width: 100%; /* Lebar penuh */
-    background-color: #f5f5dc; /* Latar belakang cream */
-    color: #333; /* Warna teks */
-    transition: 0.3s; /* Efek transisi */
+    width: 100%; /* Lebar penuh dalam kotak */
+    padding: 10px; /* Jarak dalam input */
+    margin-bottom: 15px; /* Jarak antar elemen */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Pastikan padding tidak memperbesar lebar */
+}
+/* Memusatkan dan menggeser kontainer ke kanan */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    margin-left: 40px; /* Sesuaikan nilai ini untuk menggeser kontainer ke kanan */
 }
 
-/* Gaya ketika input fokus */
-.forms input[type="text"]:focus,
-.forms textarea:focus {
-    border-color: #007BFF; /* Warna batas saat fokus */
-    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3); /* Bayangan lebih cerah */
-    outline: none; /* Hilangkan outline default */
+/* Gaya tambahan untuk daftar */
+.container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container ul li {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.container ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.container ul li a:hover {
+    color: #0056b3;
 }
