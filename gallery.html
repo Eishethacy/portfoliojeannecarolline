@@ -1,7 +1,7 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Jeanne's Web | Gallery</title>
+  <title>Jeanne's Web | Gallery</title>
 <meta charset="UTF-8">
 <link rel="shortcut icon" type="image/x-icon" href="style/images/favicon.png">
 <link rel="stylesheet" type="text/css" href="style/css/style.css" media="all">
@@ -9,6 +9,88 @@
 <link rel="stylesheet" type="text/css" href="style/type/classic.css" media="all">
 <link rel="stylesheet" type="text/css" href="style/type/goudy.css" media="all">
 <link rel="stylesheet" href="styles.css">
+<style>
+  /* Global Styles */
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+  }
+
+  /* Navbar */
+  header {
+      background: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+  }
+
+  nav ul {
+      list-style: none;
+      padding: 0;
+  }
+
+  nav ul li {
+      display: inline;
+      margin: 0 15px;
+  }
+
+  nav ul li a {
+      text-decoration: none;
+      color: #fff;
+  }
+
+  /* Section Styles */
+  section {
+      padding: 20px;
+      text-align: center;
+  }
+
+  /* Gallery Section */
+  .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+  }
+
+  .gallery-item {
+      display: none;
+      width: 200px;
+      text-align: center;
+  }
+
+  .gallery-item img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  .filter-buttons {
+      margin-bottom: 20px;
+  }
+
+  .filter-buttons button {
+      margin: 0 10px;
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+  }
+
+  .filter-buttons button:hover {
+      background-color: #555;
+  }
+
+  /* Footer */
+  footer {
+      text-align: center;
+      padding: 10px 0;
+      background: #333;
+      color: #fff;
+  }
+</style>
 <script src="style/js/jquery-1.6.2.min.js"></script>
 <script src="style/js/superfish.js"></script>
 <script src="style/js/jquery.prettyPhoto.js"></script>
@@ -102,7 +184,7 @@ $.fn.imagesLoaded = function (a) {
 </script>
 </head>
 <body>
-<div id="body-wrapper">
+    <div id="body-wrapper">
   <div id="header">
     <div class="logo"> Jeanne Carolline's Portfolio</div>
     <div class="menu">
@@ -122,41 +204,56 @@ $.fn.imagesLoaded = function (a) {
     </div>
     <div class="clear"></div>
   </div>
-  <div id="wrapper">
-    <div class="intro">I could say it as my Spam Photos.</div>
-    <div id="portfolio">
-      <div class="clear"></div>
-      <div class="items">
-        <div class="box col5"><a href="style/images/art/m1.jpg" rel="prettyPhoto[gallery]"><span class="overlay zoom"></span><img src="style/images/art/m1.jpg" alt=""></a></div>
-        <div class="box col5"><a href="style/images/art/m2.jpg" rel="prettyPhoto[gallery]"><span class="overlay zoom"></span><img src="style/images/art/m2.jpg" alt=""></a></div>
-        <div class="box col5"><a href="style/images/art/m3.jpg" rel="prettyPhoto[gallery]"><span class="overlay zoom"></span><img src="style/images/art/m3.jpg" alt=""></a></div>
-        <div class="box col5"><a href="style/images/art/m4.jpg" rel="prettyPhoto[gallery]"><span class="overlay zoom"></span><img src="style/images/art/m4.jpg" alt=""></a></div>
-        <div class="box col5"><a href="style/images/art/m5.jpg" rel="prettyPhoto[gallery]"><span class="overlay zoom"></span><img src="style/images/art/m5.jpg" alt=""></a></div>
-        <div class="box col5"><a href="style/images/art/m6.jpg" rel="prettyPhoto[gallery]"><span class="overlay zoom"></span><img src="style/images/art/m6.jpg" alt=""></a></div>
-        <div class="box col5"><a href="style/images/art/m7.jpg" rel="prettyPhoto[gallery]"><span class="overlay zoom"></span><img src="style/images/art/m7.jpg" alt=""></a></div>
-        <div class="box col5"><a href="style/images/art/m8.jpg" rel="prettyPhoto[gallery]"><span class="overlay zoom"></span><img src="style/images/art/m8.jpg" alt=""></a></div>
-        <div class="box col5"><a href="style/images/art/m9.jpg" rel="prettyPhoto[gallery]"><span class="overlay zoom"></span><img src="style/images/art/m9.jpg" alt=""></a></div>
-        <div class="box col5"><a href="style/images/art/m10.jpg" rel="prettyPhoto[gallery]"><span class="overlay zoom"></span><img src="style/images/art/m10.jpg" alt=""></a></div>
-        <div class="box col5"><a href="style/images/art/m11.jpg" rel="prettyPhoto[gallery]"><span class="overlay zoom"></span><img src="style/images/art/m11.jpg" alt=""></a></div>
-        <div class="box col5"><a href="style/images/art/m12.jpg" rel="prettyPhoto[gallery]"><span class="overlay zoom"></span><img src="style/images/art/m12.jpg" alt=""></a></div>
-        <div class="box col5"><a href="style/images/art/m13.jpg" rel="prettyPhoto[gallery]"><span class="overlay zoom"></span><img src="style/images/art/m13.jpg" alt=""></a></div>
-        <div class="box col5"><a href="style/images/art/m14.jpg" rel="prettyPhoto[gallery]"><span class="overlay zoom"></span><img src="style/images/art/m14.jpg" alt=""></a></div>
-        <div class="box col5"><a href="style/images/art/m15.jpg" rel="prettyPhoto[gallery]"><span class="overlay zoom"></span><img src="style/images/art/m15.jpg" alt=""></a></div>
-        <div class="box col5"><a href="style/images/art/m16.jpg" rel="prettyPhoto[gallery]"><span class="overlay zoom"></span><img src="style/images/art/m16.jpg" alt=""></a></div>
-        <div class="box col5"><a href="style/images/art/m17.jpg" rel="prettyPhoto[gallery]"><span class="overlay zoom"></span><img src="style/images/art/m17.jpg" alt=""></a></div>
-        <div class="box col5"><a href="style/images/art/m18.jpg" rel="prettyPhoto[gallery]"><span class="overlay zoom"></span><img src="style/images/art/m18.jpg" alt=""></a></div>
-        <div class="box col5"><a href="style/images/art/m19.jpg" rel="prettyPhoto[gallery]"><span class="overlay zoom"></span><img src="style/images/art/m19.jpg" alt=""></a></div>
-        <div class="box col5"><a href="style/images/art/m20.jpg" rel="prettyPhoto[gallery]"><span class="overlay zoom"></span><img src="style/images/art/m20.jpg" alt=""></a></div>
-      </div>
+
+    <div class="filter-buttons">
+        <button class="filter-btn" onclick="filterGallery('all')">All</button>
+        <button class="filter-btn" onclick="filterGallery('Animal')">Animal</button>
+        <button class="filter-btn" onclick="filterGallery('Scene')">Scene</button>
+        <button class="filter-btn" onclick="filterGallery('Orang')">Orang</button>
     </div>
-  </div>
-  <div class="push"></div>
-</div>
-<div id="footer">
-  <div class="footer">
-    <p>Copyright Socialike 2024. All rights reserved // Design by Jennie Caroline not Jennie Blackpink</p>
-  </div>
-</div>
-<script src="style/js/scripts.js"></script>
+
+    <div class="items">
+        <div class="box Animal">
+            <a href="style/images/art/m1.jpg" rel="prettyPhoto[gallery]">
+                <span class="overlay zoom">Zoom</span>
+                <img src="style/images/art/m1.jpg" alt="Animal">
+            </a>
+        </div>
+
+        <div class="box Scene">
+            <a href="style/images/art/m2.jpg" rel="prettyPhoto[gallery]">
+                <span class="overlay zoom">Zoom</span>
+                <img src="style/images/art/m2.jpg" alt="Scene">
+            </a>
+        </div>
+
+        <div class="box Orang">
+            <a href="style/images/art/m3.jpg" rel="prettyPhoto[gallery]">
+                <span class="overlay zoom">Zoom</span>
+                <img src="style/images/art/m3.jpg" alt="Orang">
+            </a>
+        </div>
+
+        <div class="box Animal">
+            <a href="style/images/art/m4.jpg" rel="prettyPhoto[gallery]">
+                <span class="overlay zoom">Zoom</span>
+                <img src="style/images/art/m4.jpg" alt="Animal">
+            </a>
+        </div>
+
+        <div class="box Scene">
+            <a href="style/images/art/m5.jpg" rel="prettyPhoto[gallery]">
+                <span class="overlay zoom">Zoom</span>
+                <img src="style/images/art/m5.jpg" alt="Scene">
+            </a>
+        </div>
+
+        <div class="box Orang">
+            <a href="style/images/art/m6.jpg" rel="prettyPhoto[gallery]">
+                <span class="overlay zoom">Zoom</span>
+                <img src="style/images/art/m6.jpg" alt="Orang">
+            </a>
+        </div>
+    </div>
 </body>
 </html>
